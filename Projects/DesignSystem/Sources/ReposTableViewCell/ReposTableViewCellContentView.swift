@@ -219,6 +219,7 @@ struct ReposTableViewCellContentViewRepresentable: UIViewRepresentable {
         )
         
         let viewModel = ReposTableViewCellViewModel(
+            id: 1,
             repoName: "Repository",
             repoDescription: "Repo description with some text to describe what it does. Repo description with some text to describe what it does. Repo description with some text to describe what it does. Repo description with some text to describe what it does",
             repoAuthor: repoAuthor,
