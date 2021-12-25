@@ -4,6 +4,9 @@ let workspace = Workspace(
     name: "GHReposAppWorkspace",
     projects: [
         "Projects/GHReposApp",
-        "Projects/DesignSystem"
+        "Projects/DesignSystem",
+        "Projects/Networking",
+        "Projects/Models",
+        "Projects/Reducers"
     ]
 )

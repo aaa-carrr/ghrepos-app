@@ -4,7 +4,14 @@ let project = Project(
     name: "DesignSystem",
     organizationName: "com.aaacarrr",
     packages: [
-        .remote(url: "https://github.com/pointfreeco/swift-snapshot-testing.git", requirement: .exact("1.9.0"))
+        .remote(
+            url: "https://github.com/pointfreeco/swift-snapshot-testing.git",
+            requirement: .exact("1.9.0")
+        ),
+        .remote(
+            url: "https://github.com/ReactiveX/RxSwift.git",
+            requirement: .exact("6.2.0")
+        )
     ],
     targets: [
         Target(
@@ -15,9 +22,8 @@ let project = Project(
             infoPlist: .default,
             sources: ["Sources/**"],
             dependencies: [
-                .xcframework(path: "../../Frameworks/RxSwift.xcframework"),
-                .xcframework(path: "../../Frameworks/RxCocoaRuntime.xcframework"),
-                .xcframework(path: "../../Frameworks/RxCocoa.xcframework")
+                .package(product: "RxSwift"),
+                .package(product: "RxCocoa")
             ]
         ),
         Target(
@@ -29,9 +35,8 @@ let project = Project(
             sources: ["Tests/**"],
             dependencies: [
                 .target(name: "DesignSystem"),
-                .xcframework(path: "../../Frameworks/RxSwift.xcframework"),
-                .xcframework(path: "../../Frameworks/RxCocoaRuntime.xcframework"),
-                .xcframework(path: "../../Frameworks/RxCocoa.xcframework"),
+                .package(product: "RxSwift"),
+                .package(product: "RxCocoa"),
                 .package(product: "SnapshotTesting")
             ]
         )
