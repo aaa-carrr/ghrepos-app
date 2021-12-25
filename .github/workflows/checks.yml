@@ -31,4 +31,4 @@ jobs:
         name: Run tests
         with:
           command: 'test'
-          arguments: '--device "iPhone 13" --os 15.0'
+          arguments: '--device "iPhone 12" --os 14.4'
