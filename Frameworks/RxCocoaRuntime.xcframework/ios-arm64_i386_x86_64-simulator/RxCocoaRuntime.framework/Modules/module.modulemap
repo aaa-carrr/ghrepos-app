@@ -1,6 +1,0 @@
-framework module RxCocoaRuntime {
-  umbrella header "RxCocoaRuntime.h"
-
-  export *
-  module * { export * }
-}
