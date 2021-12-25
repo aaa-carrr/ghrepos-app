@@ -19,6 +19,7 @@ let project = Project(
             platform: .iOS,
             product: .framework,
             bundleId: "com.aaacarrr.DesignSystem",
+            deploymentTarget: .iOS(targetVersion: "14.4", devices: .iphone),
             infoPlist: .default,
             sources: ["Sources/**"],
             dependencies: [
@@ -31,6 +32,7 @@ let project = Project(
             platform: .iOS,
             product: .unitTests,
             bundleId: "com.aaacarrr.DesignSystemTests",
+            deploymentTarget: .iOS(targetVersion: "14.4", devices: .iphone),
             infoPlist: .default,
             sources: ["Tests/**"],
             dependencies: [

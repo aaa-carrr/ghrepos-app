@@ -9,6 +9,7 @@ let project = Project(
             platform: .iOS,
             product: .framework,
             bundleId: "com.aaacarrr.Models",
+            deploymentTarget: .iOS(targetVersion: "14.4", devices: .iphone),
             infoPlist: .default,
             sources: ["Sources/**"]
         )

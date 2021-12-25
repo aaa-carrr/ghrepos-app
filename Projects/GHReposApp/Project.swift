@@ -9,6 +9,7 @@ let project = Project(
             platform: .iOS,
             product: .app,
             bundleId: "com.aaacarrr.GHReposApp",
+            deploymentTarget: .iOS(targetVersion: "14.4", devices: .iphone),
             infoPlist: .default,
             sources: ["Sources/**"],
             dependencies: [

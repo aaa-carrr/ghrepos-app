@@ -8,7 +8,7 @@ final class LoadableImageViewTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        sut = LoadableImageView()
+        sut = LoadableImageView(frame: .zero)
     }
     
     override func tearDown() {

@@ -9,10 +9,10 @@ let project = Project(
             platform: .iOS,
             product: .framework,
             bundleId: "com.aaacarrr.Networking",
+            deploymentTarget: .iOS(targetVersion: "14.4", devices: .iphone),
             infoPlist: .default,
             sources: ["Sources/**"],
             dependencies: [
-                .xcframework(path: "../../Frameworks/RxSwift.xcframework"),
                 .project(target: "Models", path: "../Models")
             ]
         ),
@@ -21,11 +21,11 @@ let project = Project(
             platform: .iOS,
             product: .unitTests,
             bundleId: "com.aaacarrr.NetworkingTests",
+            deploymentTarget: .iOS(targetVersion: "14.4", devices: .iphone),
             infoPlist: .default,
             sources: ["Tests/**"],
             dependencies: [
-                .target(name: "Networking"),
-                .xcframework(path: "../../Frameworks/RxSwift.xcframework"),
+                .target(name: "Networking")
             ]
         )
     ]
