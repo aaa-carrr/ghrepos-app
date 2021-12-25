@@ -103,7 +103,7 @@ struct UserProfileCompactViewRepresentable: UIViewRepresentable {
     }
 }
 
-struct Preview: PreviewProvider {
+struct UserProfileCompactViewPreview: PreviewProvider {
     static var previews: some View {
         UserProfileCompactViewRepresentable()
             .frame(width: 80, height: 80, alignment: .center)

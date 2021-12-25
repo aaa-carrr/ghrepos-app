@@ -3,8 +3,10 @@ import RxSwift
 import RxCocoa
 
 public final class LoadableImageView: UIImageView {
+    // MARK: - Properties
     private var disposeBag: DisposeBag = DisposeBag()
     
+    // MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUp()
@@ -15,11 +17,13 @@ public final class LoadableImageView: UIImageView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Private
     private func setUp() {
         contentMode = .scaleAspectFill
     }
     
-    func setUp(with loadableImage: LoadableImage) {
+    // MARK: - API
+    public func setUp(with loadableImage: LoadableImage) {
         loadableImage
             .image
             .drive(rx.image)
