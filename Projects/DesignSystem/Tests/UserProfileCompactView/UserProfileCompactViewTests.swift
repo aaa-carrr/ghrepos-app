@@ -35,15 +35,12 @@ final class UserProfileCompactViewTests: XCTestCase {
         
         sut.update(with: viewModel)
         
-        let snapshot = SnapshotViewController(
-            sut,
-            size: CGSize(
-                width: 80,
-                height: 80
-            )
+        let size = CGSize(
+            width: 80,
+            height: 80
         )
         
-        assertSnapshot(matching: snapshot, as: .image(on: .iPhoneSe))
+        assertSnapshot(matching: sut, as: .image(size: size))
     }
     
     func testUserProfileCompactView_when_itIsSetUp_butImageFailsToLoad() {
@@ -61,15 +58,12 @@ final class UserProfileCompactViewTests: XCTestCase {
         
         sut.update(with: viewModel)
         
-        let snapshot = SnapshotViewController(
-            sut,
-            size: CGSize(
-                width: 80,
-                height: 80
-            )
+        let size = CGSize(
+            width: 80,
+            height: 80
         )
         
-        assertSnapshot(matching: snapshot, as: .image(on: .iPhoneSe))
+        assertSnapshot(matching: sut, as: .image(size: size))
     }
     
     func testUserProfileCompactView_when_itIsSetUp_withAnEmptyString() {
@@ -91,15 +85,12 @@ final class UserProfileCompactViewTests: XCTestCase {
         
         sut.update(with: viewModel)
         
-        let snapshot = SnapshotViewController(
-            sut,
-            size: CGSize(
-                width: 80,
-                height: 80
-            )
+        let size = CGSize(
+            width: 80,
+            height: 80
         )
         
-        assertSnapshot(matching: snapshot, as: .image(on: .iPhoneSe))
+        assertSnapshot(matching: sut, as: .image(size: size))
     }
     
     func testUserProfileCompactView_when_itIsSetUp_withAVeryLongString() {
@@ -121,14 +112,11 @@ final class UserProfileCompactViewTests: XCTestCase {
         
         sut.update(with: viewModel)
         
-        let snapshot = SnapshotViewController(
-            sut,
-            size: CGSize(
-                width: 80,
-                height: 80
-            )
+        let size = CGSize(
+            width: 80,
+            height: 80
         )
         
-        assertSnapshot(matching: snapshot, as: .image(on: .iPhoneSe))
+        assertSnapshot(matching: sut, as: .image(size: size))
     }
 }

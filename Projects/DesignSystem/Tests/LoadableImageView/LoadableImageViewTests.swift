@@ -35,15 +35,12 @@ final class LoadableImageViewTests: XCTestCase {
         sut.tintColor = .red
         sut.setUp(with: loadableImage)
         
-        let snapshot = SnapshotViewController(
-            sut,
-            size: CGSize(
-                width: 50,
-                height: 50
-            )
+        let size = CGSize(
+            width: 50,
+            height: 50
         )
         
-        assertSnapshot(matching: snapshot, as: .image(on: .iPhoneSe))
+        assertSnapshot(matching: sut, as: .image(size: size))
 
     }
     
@@ -61,15 +58,12 @@ final class LoadableImageViewTests: XCTestCase {
         sut.tintColor = .red
         sut.setUp(with: loadableImage)
         
-        let snapshot = SnapshotViewController(
-            sut,
-            size: CGSize(
-                width: 50,
-                height: 50
-            )
+        let size = CGSize(
+            width: 50,
+            height: 50
         )
         
-        assertSnapshot(matching: snapshot, as: .image(on: .iPhoneSe))
+        assertSnapshot(matching: sut, as: .image(size: size))
 
     }
 }
