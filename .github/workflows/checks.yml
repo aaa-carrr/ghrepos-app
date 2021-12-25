@@ -22,13 +22,13 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Warm cache
       - uses: tuist/tuist-action@0.13.0
+        name: Warm cache
         with:
           command: 'cache warm'
           arguments: ''
-      - name: Run tests
       - uses: tuist/tuist-action@0.13.0
+        name: Run tests
         with:
           command: 'test'
           arguments: '--device "iPhone 13" --os 15.0'
