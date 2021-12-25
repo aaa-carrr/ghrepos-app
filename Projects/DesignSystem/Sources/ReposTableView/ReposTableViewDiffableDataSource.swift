@@ -4,13 +4,13 @@ import RxSwift
 final class ReposTableViewDiffableDataSource: UITableViewDiffableDataSource<ReposTableViewSection, ReposTableViewCellViewModel> {
     private let bindable: Observable<ReposTableViewModel>
     private let tableView: ReposTableView
-    private let scheduler: MainScheduler
+    private let scheduler: SchedulerType
     private var disposeBag: DisposeBag = DisposeBag()
     
     init(
         tableView: ReposTableView,
         bindable: Observable<ReposTableViewModel>,
-        scheduler: MainScheduler = MainScheduler.instance
+        scheduler: SchedulerType = MainScheduler.instance
     ) {
         self.tableView = tableView
         self.bindable = bindable

@@ -5,12 +5,12 @@ import RxCocoa
 public final class ReposTableView: UITableView {
     // MARK: - Properties
     private var disposeBag: DisposeBag = DisposeBag()
-    private let scheduler: MainScheduler
+    private let scheduler: SchedulerType
     
     private var diffableDataSource: ReposTableViewDiffableDataSource?
     
     // MARK: - Init
-    public init(scheduler: MainScheduler = MainScheduler.instance) {
+    public init(scheduler: SchedulerType = MainScheduler.instance) {
         self.scheduler = scheduler
         super.init(frame: .zero, style: .grouped)
         setUp()
