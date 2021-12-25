@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class UserProfileCompactView: UIView {
+public final class UserProfileCompactView: UIView {
     // MARK: - Properties
     @AutoLayout private var profileImageView: LoadableImageView
     @AutoLayout private var usernameLabel: UILabel
@@ -23,7 +23,7 @@ final class UserProfileCompactView: UIView {
     
     // MARK: - Setup
     private func setUp() {
-        setUpStackView()
+        setUpViews()
         layoutViews()
         layoutConstraints()
     }
@@ -42,6 +42,9 @@ final class UserProfileCompactView: UIView {
     
     private func setUpUsername() {
         usernameLabel.textColor = .label
+        usernameLabel.adjustsFontSizeToFitWidth = true
+        usernameLabel.minimumScaleFactor = 0.75
+        usernameLabel.numberOfLines = 2
     }
     
     private func setUpProfileImage() {

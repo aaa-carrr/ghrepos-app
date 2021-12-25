@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class LoadableImageView: UIImageView {
+public final class LoadableImageView: UIImageView {
     private var disposeBag: DisposeBag = DisposeBag()
     
     override init(frame: CGRect) {

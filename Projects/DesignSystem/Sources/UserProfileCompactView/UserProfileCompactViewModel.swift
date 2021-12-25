@@ -1,6 +1,6 @@
 import Foundation
 
-struct UserProfileCompactViewModel {
+public struct UserProfileCompactViewModel {
     let username: String
     let profileImage: LoadableImage
 }

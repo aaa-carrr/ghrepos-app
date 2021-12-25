@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-struct LoadableImage {
+public struct LoadableImage {
     private let single: Single<UIImage>
     let defaultImage: UIImage
     
