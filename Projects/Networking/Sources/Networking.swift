@@ -7,12 +7,6 @@ public protocol NetworkingType {
     func loadImage(from request: URLRequest) -> Single<UIImage>
 }
 
-public protocol HTTPClient {
-    func dataTask(with: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
-}
-
-extension URLSession: HTTPClient {}
-
 public struct Networking: NetworkingType {
     private let http: HTTPClient
     public init(
@@ -43,7 +37,7 @@ public struct Networking: NetworkingType {
                         let decoder = JSONDecoder()
                         let decoded = try decoder.decode(T.self, from: unwrappedData)
                         single(.success(decoded))
-                    } catch let error as Error {
+                    } catch {
                         single(.failure(NetworkingError.decodingFailed))
                     }
 
@@ -80,7 +74,7 @@ public struct Networking: NetworkingType {
                     if let image = UIImage(data: unwrappedData) {
                         single(.success(image))
                     } else {
-                        single(.failure(NetworkingError.decodingFailed))
+                        single(.failure(NetworkingError.failedToLoadImage))
                     }
                 } else {
                     single(.failure(NetworkingError.unexpectedResponseType))
@@ -93,12 +87,4 @@ public struct Networking: NetworkingType {
             }
         }
     }
-}
-
-public enum NetworkingError: Error {
-    case requestFailed
-    case unexpectedHTTPStatusCode
-    case missingData
-    case decodingFailed
-    case unexpectedResponseType
 }

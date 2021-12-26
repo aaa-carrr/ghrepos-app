@@ -1,5 +1,4 @@
 import Foundation
-import SwiftUI
 
 public struct RepoList: Decodable {
     public let totalCount: Int

@@ -9,11 +9,13 @@ import Interactors
 // MARK: - Delegate
 public protocol RepoListPresenterDelegate: AnyObject {
     func show(_ controller: UIViewController)
+    func show(repo: RepoStateModel)
 }
 
 // MARK: - Protocol
 public protocol RepoListPresenterType: AnyObject {
     func setUp()
+    var delegate: RepoListPresenterDelegate? { get set }
 }
 
 public final class RepoListPresenter: RepoListPresenterType {
@@ -24,7 +26,7 @@ public final class RepoListPresenter: RepoListPresenterType {
     private let scheduler: SchedulerType
 
     private var state: RepoListStateModel
-    private let stateRelay: BehaviorRelay<ReposViewControllerState>
+    private let stateRelay: PublishRelay<ReposViewControllerState>
     private var disposeBag: DisposeBag = DisposeBag()
 
     public weak var delegate: RepoListPresenterDelegate?
@@ -40,7 +42,7 @@ public final class RepoListPresenter: RepoListPresenterType {
         self.reducer = reducer
         self.interactor = interactor
         self.scheduler = scheduler
-        self.stateRelay = BehaviorRelay<ReposViewControllerState>(value: .loading)
+        self.stateRelay = PublishRelay<ReposViewControllerState>()
         self.controller = ReposViewController(
             repoListView: ReposTableView(),
             state: stateRelay.asObservable()
@@ -85,6 +87,7 @@ public final class RepoListPresenter: RepoListPresenterType {
     private func handleReducerUpdate(_ update: RepoListReducerUpdate) {
         switch update.effect {
         case .fetchRepos(page: let page):
+            stateRelay.accept(.loading)
             let resource = RepoListInteractorResource(page: page)
             interactor
                 .repoList(from: resource)
@@ -92,10 +95,12 @@ public final class RepoListPresenter: RepoListPresenterType {
                 .map { $0 }
                 .subscribe(onSuccess: { [weak self] model in
                     self?.handleReducer(action: .reposLoaded(model))
+                }, onFailure: { [weak self] _ in
+                    self?.stateRelay.accept(.error)
                 }).disposed(by: disposeBag)
             
         case .showRepo(let repo):
-            break
+            delegate?.show(repo: repo)
         case .update:
             let viewModel = makeViewModel()
             stateRelay.accept(.show(viewModel))

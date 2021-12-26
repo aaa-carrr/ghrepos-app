@@ -12,7 +12,7 @@ open class StatefulViewController: UIViewController {
         feedbackView.after = { [weak self] action in
             switch action {
             case .dismiss:
-                self?.feedbackView.dismiss(animated: true)
+                self?.feedbackView.dismiss(animated: false)
             }
         }
 
@@ -20,12 +20,12 @@ open class StatefulViewController: UIViewController {
             guard let self = self else { return }
             self.present(
                 self.feedbackView,
-                animated: true
+                animated: false
             )
         }
 
         onFeedbackDismiss = { [weak self] in
-            self?.feedbackView.dismiss(animated: true)
+            self?.feedbackView.dismiss(animated: false)
         }
     }
 

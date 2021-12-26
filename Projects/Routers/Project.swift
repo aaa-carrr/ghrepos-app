@@ -21,6 +21,7 @@ let project = Project(
             dependencies: [
                 .package(product: "RxSwift"),
                 .project(target: "Networking", path: "../Networking"),
+                .project(target: "Interactors", path: "../Interactors"),
                 .project(target: "RepoListFeature", path: "../RepoListFeature"),
                 .project(target: "Reducers", path: "../Reducers")
             ]

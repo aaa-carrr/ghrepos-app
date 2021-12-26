@@ -24,6 +24,7 @@ public final class LoadableImageView: UIImageView {
     
     // MARK: - API
     public func setUp(with loadableImage: LoadableImage) {
+        image = nil
         loadableImage
             .image
             .drive(rx.image)
