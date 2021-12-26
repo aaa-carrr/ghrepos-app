@@ -8,6 +8,8 @@ let workspace = Workspace(
         "Projects/Networking",
         "Projects/Models",
         "Projects/Reducers",
-        "Projects/RepoListFeature"
+        "Projects/RepoListFeature",
+        "Projects/Routers",
+        "Projects/Interactors"
     ]
 )

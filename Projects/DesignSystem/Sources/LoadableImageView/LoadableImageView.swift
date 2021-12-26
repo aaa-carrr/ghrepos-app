@@ -19,7 +19,7 @@ public final class LoadableImageView: UIImageView {
     
     // MARK: - Private
     private func setUp() {
-        contentMode = .scaleAspectFill
+        contentMode = .scaleAspectFit
     }
     
     // MARK: - API

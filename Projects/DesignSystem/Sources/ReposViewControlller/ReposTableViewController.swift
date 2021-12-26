@@ -37,6 +37,8 @@ public final class ReposViewController: StatefulViewController {
         setUpRepoListViewBindings()
         setUpStateBinding()
         onAction?(.fetched)
+        title = "Repos"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     // MARK: - Bindings
@@ -87,7 +89,12 @@ public final class ReposViewController: StatefulViewController {
             .prefetchRows
             .subscribe(on: scheduler)
             .subscribe(onNext: { [weak self] indices in
-                self?.onAction?(.requestedNewPage(atIndices: indices))
+                indices.forEach { index in
+                    if let numberOfRepos = self?.repoListView.numberOfRows(inSection: 0),
+                       index.row >= numberOfRepos - 1 {
+                        self?.onAction?(.requestedNewPage)
+                    }
+                }
             }).disposed(by: disposeBag)
     }
     

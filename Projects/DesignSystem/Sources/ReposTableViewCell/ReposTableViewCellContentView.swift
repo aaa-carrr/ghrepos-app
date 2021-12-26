@@ -118,7 +118,8 @@ final class ReposTableViewCellContentView: UIView {
         
         NSLayoutConstraint.activate(
             [
-                repoAuthor.centerYAnchor.constraint(equalTo: contentStackView.centerYAnchor),
+                repoAuthor.topAnchor.constraint(equalTo: topAnchor),
+                repoAuthor.bottomAnchor.constraint(equalTo: bottomAnchor),
                 repoAuthor.widthAnchor.constraint(equalToConstant: 80)
             ]
         )

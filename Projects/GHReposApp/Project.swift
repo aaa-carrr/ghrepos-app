@@ -3,12 +3,6 @@ import ProjectDescription
 let project = Project(
     name: "GHReposApp",
     organizationName: "com.aaacarrr",
-    packages: [
-        .remote(
-            url: "https://github.com/ReactiveX/RxSwift.git",
-            requirement: .exact("6.2.0")
-        )
-    ],
     targets: [
         Target(
             name: "GHReposApp",
@@ -24,11 +18,7 @@ let project = Project(
                 "Resources/LaunchScreen.storyboard"
             ],
             dependencies: [
-                .package(product: "RxSwift"),
-                .package(product: "RxCocoa"),
-                .project(target: "DesignSystem", path: "../DesignSystem"),
-                .project(target: "Networking", path: "../Networking"),
-                .project(target: "RepoListFeature", path: "../RepoListFeature")
+                .project(target: "Routers", path: "../Routers")
             ]
         )
     ]

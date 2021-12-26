@@ -1,7 +1,7 @@
 import ProjectDescription
 
 let project = Project(
-    name: "Networking",
+    name: "Routers",
     organizationName: "com.aaacarrr",
     packages: [
         .remote(
@@ -11,29 +11,32 @@ let project = Project(
     ],
     targets: [
         Target(
-            name: "Networking",
+            name: "Routers",
             platform: .iOS,
             product: .framework,
-            bundleId: "com.aaacarrr.Networking",
+            bundleId: "com.aaacarrr.Routers",
             deploymentTarget: .iOS(targetVersion: "14.4", devices: .iphone),
             infoPlist: .default,
             sources: ["Sources/**"],
             dependencies: [
                 .package(product: "RxSwift"),
-                .project(target: "Models", path: "../Models")
+                .project(target: "Networking", path: "../Networking"),
+                .project(target: "RepoListFeature", path: "../RepoListFeature"),
+                .project(target: "Reducers", path: "../Reducers")
             ]
         ),
         Target(
-            name: "NetworkingTests",
+            name: "RoutersTests",
             platform: .iOS,
             product: .unitTests,
-            bundleId: "com.aaacarrr.NetworkingTests",
+            bundleId: "com.aaacarrr.RoutersTests",
             deploymentTarget: .iOS(targetVersion: "14.4", devices: .iphone),
             infoPlist: .default,
             sources: ["Tests/**"],
             dependencies: [
-                .target(name: "Networking")
+                .target(name: "Routers"),
             ]
         )
     ]
 )
+

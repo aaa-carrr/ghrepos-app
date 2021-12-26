@@ -24,6 +24,10 @@ let project = Project(
             sources: ["Sources/**"],
             dependencies: [
                 .project(target: "DesignSystem", path: "../DesignSystem"),
+                .project(target: "Networking", path: "../Networking"),
+                .project(target: "Reducers", path: "../Reducers"),
+                .project(target: "Interactors", path: "../Interactors"),
+                .project(target: "Models", path: "../Models"),
                 .package(product: "RxSwift"),
                 .package(product: "RxCocoa")
             ]
