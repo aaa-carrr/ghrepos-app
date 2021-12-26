@@ -4,9 +4,9 @@ import RxCocoa
 
 public struct LoadableImage {
     private let single: Single<UIImage>
-    let defaultImage: UIImage
+    public let defaultImage: UIImage
     
-    init(
+    public init(
         single: Single<UIImage>,
         defaultImage: UIImage
     ) {
@@ -14,7 +14,7 @@ public struct LoadableImage {
         self.defaultImage = defaultImage
     }
     
-    var image: Driver<UIImage> {
+    public var image: Driver<UIImage> {
         return single.asDriver(onErrorJustReturn: defaultImage)
     }
 }

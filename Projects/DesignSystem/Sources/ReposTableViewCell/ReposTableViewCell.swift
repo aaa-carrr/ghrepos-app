@@ -22,7 +22,7 @@ public final class ReposTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate(
             [
                 cellContentView.heightAnchor.constraint(equalTo: contentView.heightAnchor),
-                cellContentView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
+                cellContentView.widthAnchor.constraint(equalTo: contentView.widthAnchor, constant: -16),
                 cellContentView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
                 cellContentView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
             ]

@@ -1,0 +1,3 @@
+enum FeedbackScreenAfter {
+    case dismiss
+}

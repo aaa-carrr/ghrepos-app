@@ -14,8 +14,6 @@ final class ReposTableViewCellContentView: UIView {
     @AutoLayout private var repoForksLabel: UILabel
     
     @AutoLayout private var repoAuthor: UserProfileCompactView
-    
-    @AutoLayout private var separatorView: UIView
 
     // MARK: - Init
     override init(frame: CGRect) {
@@ -50,7 +48,6 @@ final class ReposTableViewCellContentView: UIView {
         contentStackView.addArrangedSubview(repoAuthor)
         
         addSubview(contentStackView)
-        addSubview(separatorView)
     }
     
     // MARK: - View Configuration
@@ -62,7 +59,6 @@ final class ReposTableViewCellContentView: UIView {
         setUpRepoDescriptionLabel()
         setUpRepoStarsLabel()
         setUpRepoForksLabel()
-        setUpSeparatorView()
     }
     
     private func setUpContentStackView() {
@@ -81,7 +77,7 @@ final class ReposTableViewCellContentView: UIView {
     
     private func setUpRepoStarsForksStackView() {
         repoStarsForksStackView.axis = .horizontal
-        repoStarsForksStackView.distribution = .fill
+        repoStarsForksStackView.distribution = .equalSpacing
         repoStarsForksStackView.alignment = .fill
         repoStarsForksStackView.spacing = 20
     }
@@ -108,10 +104,6 @@ final class ReposTableViewCellContentView: UIView {
         repoForksLabel.font = .preferredFont(forTextStyle: .headline)
     }
     
-    private func setUpSeparatorView() {
-        separatorView.backgroundColor = .label
-    }
-    
     // MARK: - Constraints
     private func layoutConstraints() {
         NSLayoutConstraint.activate(
@@ -119,21 +111,14 @@ final class ReposTableViewCellContentView: UIView {
                 contentStackView.topAnchor.constraint(equalTo: topAnchor),
                 contentStackView.widthAnchor.constraint(equalTo: widthAnchor),
                 contentStackView.centerXAnchor.constraint(equalTo: centerXAnchor),
-                contentStackView.centerYAnchor.constraint(equalTo: centerYAnchor)
+                contentStackView.centerYAnchor.constraint(equalTo: centerYAnchor),
+                contentStackView.bottomAnchor.constraint(equalTo: bottomAnchor)
             ]
         )
         
         NSLayoutConstraint.activate(
             [
-                separatorView.bottomAnchor.constraint(equalTo: contentStackView.bottomAnchor),
-                separatorView.widthAnchor.constraint(equalTo: widthAnchor),
-                separatorView.heightAnchor.constraint(equalToConstant: 2)
-            ]
-        )
-        
-        NSLayoutConstraint.activate(
-            [
-                repoAuthor.heightAnchor.constraint(equalToConstant: 100),
+                repoAuthor.centerYAnchor.constraint(equalTo: contentStackView.centerYAnchor),
                 repoAuthor.widthAnchor.constraint(equalToConstant: 80)
             ]
         )

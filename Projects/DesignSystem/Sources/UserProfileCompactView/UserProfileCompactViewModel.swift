@@ -1,6 +1,14 @@
 import Foundation
 
 public struct UserProfileCompactViewModel {
-    let username: String
-    let profileImage: LoadableImage
+    public let username: String
+    public let profileImage: LoadableImage
+    
+    public init(
+        username: String,
+        profileImage: LoadableImage
+    ) {
+        self.username = username
+        self.profileImage = profileImage
+    }
 }
