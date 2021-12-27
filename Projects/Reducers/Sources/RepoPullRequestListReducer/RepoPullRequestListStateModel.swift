@@ -1,6 +1,6 @@
 import Foundation
 
-public struct RepoPullRequestListStateModel {
+public struct RepoPullRequestListStateModel: Equatable {
     public let repoAuthor: String
     public let repoName: String
     public let currentPage: Int
@@ -22,7 +22,7 @@ public struct RepoPullRequestListStateModel {
     }
 }
 
-public struct RepoPullRequestStateModel {
+public struct RepoPullRequestStateModel: Equatable {
     public let id: Int
     public let title: String
     public let body: String
@@ -46,7 +46,7 @@ public struct RepoPullRequestStateModel {
         self.dateOfCreation = dateOfCreation
     }
 
-    public struct AuthorStateModel {
+    public struct AuthorStateModel: Equatable {
         public let name: String
         public let avatarUrl: String
 

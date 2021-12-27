@@ -8,7 +8,7 @@ public enum RepoPullRequestListReducerAction {
     case tappedPullRequest(atIndex: Int)
 }
 
-public enum RepoPullRequestListReducerEffect {
+public enum RepoPullRequestListReducerEffect: Equatable {
     case fetchPullRequest(Int)
     case showPullRequest(RepoPullRequestStateModel)
     case update

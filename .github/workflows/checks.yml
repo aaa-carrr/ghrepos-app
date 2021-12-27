@@ -23,11 +23,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: tuist/tuist-action@0.13.0
-        name: Warm cache
-        with:
-          command: 'cache warm'
-          arguments: ''
-      - uses: tuist/tuist-action@0.13.0
         name: Run tests
         with:
           command: 'test'

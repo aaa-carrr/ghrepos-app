@@ -8,7 +8,7 @@ public enum RepoListReducerAction {
     case tappedRepo(atIndex: Int)
 }
 
-public enum RepoListReducerEffect {
+public enum RepoListReducerEffect: Equatable {
     case fetchRepos(page: Int)
     case showRepo(RepoStateModel)
     case update

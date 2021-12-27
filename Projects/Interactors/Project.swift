@@ -34,6 +34,7 @@ let project = Project(
             sources: ["Tests/**"],
             dependencies: [
                 .target(name: "Interactors"),
+                .package(product: "RxTest")
             ]
         )
     ]

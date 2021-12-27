@@ -1,6 +1,6 @@
 import Foundation
 
-public struct RepoListStateModel {
+public struct RepoListStateModel: Equatable {
     public let currentPage: Int
     public let numberOfPages: Int
     public let lastFetchedPage: Int
@@ -22,7 +22,7 @@ public struct RepoListStateModel {
     }
 }
 
-public struct RepoStateModel {
+public struct RepoStateModel: Equatable {
     public let id: Int
     public let name: String
     public let description: String
@@ -47,7 +47,7 @@ public struct RepoStateModel {
     }
 
 
-    public struct OwnerStateModel {
+    public struct OwnerStateModel: Equatable {
         public let name: String
         public let avatarUrl: String
 
