@@ -33,8 +33,12 @@ View <---- ViewController <---- Presenter <---------- Router
 
 ## Referências e influências
 [Tuist](https://docs.tuist.io/building-at-scale/microfeatures)
+
 [Pointfree](https://www.pointfree.co)
+
 [RxSwift](https://github.com/ReactiveX/RxSwift)
+
 [Mobius.swift](https://github.com/spotify/Mobius.swift)
+
 [Increment - Meet the microapps architecture](https://increment.com/mobile/microapps-architecture/)
 
