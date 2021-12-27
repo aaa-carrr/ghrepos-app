@@ -16,7 +16,7 @@ final class RepoPullRequestListReducerTests: XCTestCase {
         let update = sut.reduce(state, action: .fetched)
 
         XCTAssertEqual(state, update.state)
-        XCTAssertEqual(RepoPullRequestListReducerEffect.fetchPullRequest(0), update.effect)
+        XCTAssertEqual(RepoPullRequestListReducerEffect.showLoading, update.effect)
     }
 
     func testRepoPullRequestListReducer_for_requestedNewPage() {

@@ -19,7 +19,7 @@ final class RepoListReducerTests: XCTestCase {
         )
 
         XCTAssertEqual(state, update.state)
-        XCTAssertEqual(RepoListReducerEffect.fetchRepos(page: 1), update.effect)
+        XCTAssertEqual(RepoListReducerEffect.showLoading, update.effect)
     }
 
     func testRepoListReducer_for_requestedNewPage() {

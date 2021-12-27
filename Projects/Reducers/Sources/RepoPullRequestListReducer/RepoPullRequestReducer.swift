@@ -16,7 +16,7 @@ public struct RepoPullRequestListReducer: RepoPullRequestListReducerType {
         case .fetched:
             return RepoPullRequestListReducerUpdate(
                 state: state,
-                effect: .fetchPullRequest(state.currentPage)
+                effect: .showLoading
             )
         case .requestedNewPage:
             if state.canFetchNewPage {

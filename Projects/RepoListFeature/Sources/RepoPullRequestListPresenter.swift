@@ -69,7 +69,6 @@ public final class RepoPullRequestListPresenter:RepoPullRequestListPresenterType
             let update = reducer.reduce(state, action: .tappedPullRequest(atIndex: atIndex.row))
             handleReducerUpdate(update)
         case .fetched:
-            stateRelay.accept(.loading)
             let update = reducer.reduce(state, action: .fetched)
             handleReducerUpdate(update)
         case .requestedNewPage:
@@ -109,6 +108,10 @@ public final class RepoPullRequestListPresenter:RepoPullRequestListPresenterType
             stateRelay.accept(.show(viewModel))
         case .none:
             break
+        case .showLoading:
+            stateRelay.accept(.loading)
+            let update = reducer.reduce(state, action: .requestedNewPage)
+            handleReducerUpdate(update)
         }
     }
 

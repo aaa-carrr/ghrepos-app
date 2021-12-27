@@ -12,6 +12,7 @@ public enum RepoListReducerEffect: Equatable {
     case fetchRepos(page: Int)
     case showRepo(RepoStateModel)
     case update
+    case showLoading
     case none
 }
 

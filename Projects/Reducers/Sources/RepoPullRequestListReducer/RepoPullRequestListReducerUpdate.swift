@@ -12,6 +12,7 @@ public enum RepoPullRequestListReducerEffect: Equatable {
     case fetchPullRequest(Int)
     case showPullRequest(RepoPullRequestStateModel)
     case update
+    case showLoading
     case none
 }
 

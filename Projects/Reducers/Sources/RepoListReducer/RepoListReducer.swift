@@ -13,7 +13,7 @@ public struct RepoListReducer: RepoListReducerType {
         case .fetched:
             return RepoListReducerUpdate(
                 state: state,
-                effect: .fetchRepos(page: state.currentPage)
+                effect: .showLoading
             )
         case .reposLoaded(let model):
             var repos = state.repos

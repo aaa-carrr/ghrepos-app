@@ -87,7 +87,6 @@ public final class RepoListPresenter: RepoListPresenterType {
     private func handleReducerUpdate(_ update: RepoListReducerUpdate) {
         switch update.effect {
         case .fetchRepos(page: let page):
-            stateRelay.accept(.loading)
             let resource = RepoListInteractorResource(page: page)
             interactor
                 .repoList(from: resource)
@@ -106,6 +105,10 @@ public final class RepoListPresenter: RepoListPresenterType {
             stateRelay.accept(.show(viewModel))
         case .none:
             break
+        case .showLoading:
+            stateRelay.accept(.loading)
+            let update = reducer.reduce(state, action: .requestedNewPage)
+            handleReducerUpdate(update)
         }
     }
 
