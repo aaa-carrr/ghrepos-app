@@ -4,7 +4,8 @@
 A ideia do app é experimentar com micromodularização fazendo uso da ferramenta Tuist, que permite gerenciar e construir projetos modularizados, além de outras funcionalidades. Além disso, o app busca usar o máximo possível, e onde fizer sentido, a programação reativa, através da biblioteca RxSwift. A fim de gerenciar com mais facilidade o estado da aplicação, o app faz uso de estruturas chamadas de Reducers, derivadas da biblioteca Redux, porém a implementação no app tem influências do projeto Mobius.swift.
 
 ## Como rodar
-Caso deseja utilizar o Tuist para gerar o projeto e executá-lo, por favor baixe o tuist e configure-o seguindo o seguinte [link](https://docs.tuist.io/tutorial/get-started).
+Caso deseja utilizar o Tuist para gerar o projeto e executá-lo, por favor baixe o tuist e configure-o seguindo o seguinte [link](https://docs.tuist.io/tutorial/get-started). Após instalar, execute o comando `tuist generate --open` para abrir o projeto. Utilize o target `GHReposAppWorkspace-Project` para rodar os testes e o target `GHReposApp` para rodar o app.
+
 Se preferir não realizar o processo de instalação e configuração do Tuist, basta clonar e rodar o .xcworkspace na raíz do projeto.
 
 Testado com:
