@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25A8B18D943D436E1C07F63C /* RepoListReducerUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5B3F1E5AA29B0CC97B73E /* RepoListReducerUpdate.swift */; };
+		26ADC1043FE179481DAFC568 /* RepoPullRequestReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9719E739066E92BBCCA94 /* RepoPullRequestReducer.swift */; };
+		35B0B68F0DB284DFE51AAB0A /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664D5ABAC1D64A0B9667E41B /* Models.framework */; platformFilter = ios; };
+		46873560870E308638AA7683 /* RepoListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F8CCAB3076899E5E82684 /* RepoListReducer.swift */; };
+		A0D04FACF33A6BAECA62D409 /* RepoPullRequestListReducerUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73015EABF460C0ED93802249 /* RepoPullRequestListReducerUpdate.swift */; };
+		CDF6D82050F2B11B628F9E86 /* RepoListStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29B0B0F4ABAA2E879FA85AA /* RepoListStateModel.swift */; };
+		D536E584E9D29EF9D1814BA3 /* RepoListReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992F789D36E41062A24819A /* RepoListReducerTests.swift */; };
+		E00754D1FE67B2F77BAE5BBC /* RepoPullRequestListStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FE0498EF3E779D6BE6D0E1 /* RepoPullRequestListStateModel.swift */; };
+		F6A0E9C480184D0C1E00ED9F /* RepoPullRequestListReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1C0C7FE3AB36DBBF57F27 /* RepoPullRequestListReducerTests.swift */; };
+		FB00226E3D3EC172F086B353 /* Reducers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3E8C2D066876F112FAA067 /* Reducers.framework */; platformFilter = ios; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95FEC85D27BF1692684F43A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 764437835342A33ECD7B7E71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9582604C2E595E8C2B2FED58;
+			remoteInfo = Reducers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E5C94A2E8D935DEA54A6B9F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B2C98D1CD62A5C9314CA2F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07FE0498EF3E779D6BE6D0E1 /* RepoPullRequestListStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoPullRequestListStateModel.swift; sourceTree = "<group>"; };
+		11C9719E739066E92BBCCA94 /* RepoPullRequestReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoPullRequestReducer.swift; sourceTree = "<group>"; };
+		31B1C0C7FE3AB36DBBF57F27 /* RepoPullRequestListReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoPullRequestListReducerTests.swift; sourceTree = "<group>"; };
+		664D5ABAC1D64A0B9667E41B /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73015EABF460C0ED93802249 /* RepoPullRequestListReducerUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoPullRequestListReducerUpdate.swift; sourceTree = "<group>"; };
+		9BB5B3F1E5AA29B0CC97B73E /* RepoListReducerUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListReducerUpdate.swift; sourceTree = "<group>"; };
+		A29B0B0F4ABAA2E879FA85AA /* RepoListStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListStateModel.swift; sourceTree = "<group>"; };
+		AB7ABB10E1A2F802B611EFAB /* ReducersTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = ReducersTests.plist; sourceTree = "<group>"; };
+		C7FF99932B637D411D66CD83 /* ReducersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReducersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D992F789D36E41062A24819A /* RepoListReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListReducerTests.swift; sourceTree = "<group>"; };
+		DA8C1BE4918B8A65CFE824F0 /* Reducers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Reducers.plist; sourceTree = "<group>"; };
+		EB3E8C2D066876F112FAA067 /* Reducers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reducers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2F8CCAB3076899E5E82684 /* RepoListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListReducer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		170E8CBEF20ABB2337925146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B0B68F0DB284DFE51AAB0A /* Models.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B3541358D865408BF5389D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB00226E3D3EC172F086B353 /* Reducers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16375B0FE0CE13B80F05BC5A /* RepoPullRequestListReducer */ = {
+			isa = PBXGroup;
+			children = (
+				73015EABF460C0ED93802249 /* RepoPullRequestListReducerUpdate.swift */,
+				07FE0498EF3E779D6BE6D0E1 /* RepoPullRequestListStateModel.swift */,
+				11C9719E739066E92BBCCA94 /* RepoPullRequestReducer.swift */,
+			);
+			path = RepoPullRequestListReducer;
+			sourceTree = "<group>";
+		};
+		33A1ADF992D3544EA4F01A82 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3DE25B501EECE30C8B6CCC3B /* RepoListReducer */,
+				16375B0FE0CE13B80F05BC5A /* RepoPullRequestListReducer */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3DE25B501EECE30C8B6CCC3B /* RepoListReducer */ = {
+			isa = PBXGroup;
+			children = (
+				ED2F8CCAB3076899E5E82684 /* RepoListReducer.swift */,
+				9BB5B3F1E5AA29B0CC97B73E /* RepoListReducerUpdate.swift */,
+				A29B0B0F4ABAA2E879FA85AA /* RepoListStateModel.swift */,
+			);
+			path = RepoListReducer;
+			sourceTree = "<group>";
+		};
+		523B91A479A5EAADCB4F6A38 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				746E3CE70EE392F68B307D6A /* InfoPlists */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		746E3CE70EE392F68B307D6A /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C1BE4918B8A65CFE824F0 /* Reducers.plist */,
+				AB7ABB10E1A2F802B611EFAB /* ReducersTests.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		779E5CBEC0A6DCC68F1DCED4 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				523B91A479A5EAADCB4F6A38 /* Derived */,
+				33A1ADF992D3544EA4F01A82 /* Sources */,
+				F28585CF025C6CE220DF0162 /* Tests */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		9C134FA2598CC570F8847202 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC405666B134ECAC23D73DE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				664D5ABAC1D64A0B9667E41B /* Models.framework */,
+				EB3E8C2D066876F112FAA067 /* Reducers.framework */,
+				C7FF99932B637D411D66CD83 /* ReducersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F28585CF025C6CE220DF0162 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D992F789D36E41062A24819A /* RepoListReducerTests.swift */,
+				31B1C0C7FE3AB36DBBF57F27 /* RepoPullRequestListReducerTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F327F005DE21E96B61E8C1B2 = {
+			isa = PBXGroup;
+			children = (
+				779E5CBEC0A6DCC68F1DCED4 /* Project */,
+				9C134FA2598CC570F8847202 /* Frameworks */,
+				EC405666B134ECAC23D73DE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		686A1A41A525EEA5E40C61D1 /* ReducersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E8BAB6B678C9E6235E4CF62 /* Build configuration list for PBXNativeTarget "ReducersTests" */;
+			buildPhases = (
+				ABE1C01B893FE3E45592E943 /* Sources */,
+				C8F36F17249AF7D01B608949 /* Resources */,
+				8E5C94A2E8D935DEA54A6B9F /* Embed Frameworks */,
+				E8B3541358D865408BF5389D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D95A3A523EBBE2034BA5D1E /* PBXTargetDependency */,
+			);
+			name = ReducersTests;
+			productName = ReducersTests;
+			productReference = C7FF99932B637D411D66CD83 /* ReducersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9582604C2E595E8C2B2FED58 /* Reducers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 294BF0C618898B9102C10B38 /* Build configuration list for PBXNativeTarget "Reducers" */;
+			buildPhases = (
+				20E062AB54D507C01824AE3E /* Sources */,
+				7618D233C9E9B42E5F469E5E /* Resources */,
+				93B2C98D1CD62A5C9314CA2F /* Embed Frameworks */,
+				170E8CBEF20ABB2337925146 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reducers;
+			productName = Reducers;
+			productReference = EB3E8C2D066876F112FAA067 /* Reducers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		764437835342A33ECD7B7E71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = com.aaacarrr;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = EF6A6A7698F9CFD06F72C331 /* Build configuration list for PBXProject "Reducers" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F327F005DE21E96B61E8C1B2;
+			productRefGroup = EC405666B134ECAC23D73DE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9582604C2E595E8C2B2FED58 /* Reducers */,
+				686A1A41A525EEA5E40C61D1 /* ReducersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7618D233C9E9B42E5F469E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F36F17249AF7D01B608949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20E062AB54D507C01824AE3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46873560870E308638AA7683 /* RepoListReducer.swift in Sources */,
+				25A8B18D943D436E1C07F63C /* RepoListReducerUpdate.swift in Sources */,
+				CDF6D82050F2B11B628F9E86 /* RepoListStateModel.swift in Sources */,
+				A0D04FACF33A6BAECA62D409 /* RepoPullRequestListReducerUpdate.swift in Sources */,
+				E00754D1FE67B2F77BAE5BBC /* RepoPullRequestListStateModel.swift in Sources */,
+				26ADC1043FE179481DAFC568 /* RepoPullRequestReducer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE1C01B893FE3E45592E943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D536E584E9D29EF9D1814BA3 /* RepoListReducerTests.swift in Sources */,
+				F6A0E9C480184D0C1E00ED9F /* RepoPullRequestListReducerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D95A3A523EBBE2034BA5D1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reducers;
+			target = 9582604C2E595E8C2B2FED58 /* Reducers */;
+			targetProxy = 95FEC85D27BF1692684F43A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		095098C7EB45089B9C2F09E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/Reducers.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaacarrr.Reducers;
+				PRODUCT_NAME = Reducers;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		27555ADD8F965D607136324D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/ReducersTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaacarrr.ReducersTests;
+				PRODUCT_NAME = ReducersTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4B4E1A4E863390C7D3D465E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62CC165B4085319561AC1393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		83F3697341CD178A0A1B3F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/ReducersTests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaacarrr.ReducersTests;
+				PRODUCT_NAME = ReducersTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		96FC69478E6B215B48BFDC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/Reducers.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaacarrr.Reducers;
+				PRODUCT_NAME = Reducers;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		294BF0C618898B9102C10B38 /* Build configuration list for PBXNativeTarget "Reducers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96FC69478E6B215B48BFDC93 /* Debug */,
+				095098C7EB45089B9C2F09E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E8BAB6B678C9E6235E4CF62 /* Build configuration list for PBXNativeTarget "ReducersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F3697341CD178A0A1B3F4F /* Debug */,
+				27555ADD8F965D607136324D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6A6A7698F9CFD06F72C331 /* Build configuration list for PBXProject "Reducers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CC165B4085319561AC1393 /* Debug */,
+				4B4E1A4E863390C7D3D465E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 764437835342A33ECD7B7E71 /* Project object */;
+}

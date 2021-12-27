@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E6A444002CE157DC50CD9F0 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF40177591AAE63210D26F2 /* DesignSystem.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		481ACAED2C83A1C510239791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD003B7DB95764D35E26829 /* AppDelegate.swift */; };
+		5AA2EFFFA5080E152A725AC8 /* Reducers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A50D79E36A3BA60AAA19156A /* Reducers.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88866F6E155295A3794BE4CF /* Routers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6073CB62D20F1F1E8A291A5 /* Routers.framework */; platformFilter = ios; };
+		A9A844B272ADD68812109E90 /* Routers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6073CB62D20F1F1E8A291A5 /* Routers.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B25AC12B32FD7E0864BDC418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D1BB1C7C6A61529D36AD4F /* LaunchScreen.storyboard */; };
+		BC798EEAAB2B7F3B5A234607 /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1ADAFF9F01C1D100E98DD7A6 /* Models.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D040B2F5E2357707F0D0399D /* Interactors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91C3C048B4BAE30A5C59DC3B /* Interactors.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0EB3AF63187BE1495A08234 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29000205969AF04B3A0DA77B /* Networking.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF2CBDA7001A8CA71976F2BE /* Bundle+GHReposApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86851BFEBEB8C303CE03E2AC /* Bundle+GHReposApp.swift */; };
+		FCC8CC2E6C8E641C9B2F2FF1 /* RepoListFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4D1E377AA2936E33858199A /* RepoListFeature.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E0756DA585BA2A289F5B8D84 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E6A444002CE157DC50CD9F0 /* DesignSystem.framework in Embed Frameworks */,
+				D040B2F5E2357707F0D0399D /* Interactors.framework in Embed Frameworks */,
+				BC798EEAAB2B7F3B5A234607 /* Models.framework in Embed Frameworks */,
+				D0EB3AF63187BE1495A08234 /* Networking.framework in Embed Frameworks */,
+				5AA2EFFFA5080E152A725AC8 /* Reducers.framework in Embed Frameworks */,
+				FCC8CC2E6C8E641C9B2F2FF1 /* RepoListFeature.framework in Embed Frameworks */,
+				A9A844B272ADD68812109E90 /* Routers.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1ADAFF9F01C1D100E98DD7A6 /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29000205969AF04B3A0DA77B /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD003B7DB95764D35E26829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56E8A8EBB56358F2B97C4532 /* GHReposApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = GHReposApp.plist; sourceTree = "<group>"; };
+		86851BFEBEB8C303CE03E2AC /* Bundle+GHReposApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+GHReposApp.swift"; sourceTree = "<group>"; };
+		8DF40177591AAE63210D26F2 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C3C048B4BAE30A5C59DC3B /* Interactors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Interactors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D1BB1C7C6A61529D36AD4F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BEB1E52E5899F03C4493C5A /* GHReposApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHReposApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50D79E36A3BA60AAA19156A /* Reducers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reducers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6073CB62D20F1F1E8A291A5 /* Routers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Routers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D1E377AA2936E33858199A /* RepoListFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RepoListFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38D9D55C1899B45E5484BC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88866F6E155295A3794BE4CF /* Routers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0081D8A24B7F7468146AAA09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98D1BB1C7C6A61529D36AD4F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		071DF47241E082A52B36FEB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1383433758451024ACC77C20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DF40177591AAE63210D26F2 /* DesignSystem.framework */,
+				9BEB1E52E5899F03C4493C5A /* GHReposApp.app */,
+				91C3C048B4BAE30A5C59DC3B /* Interactors.framework */,
+				1ADAFF9F01C1D100E98DD7A6 /* Models.framework */,
+				29000205969AF04B3A0DA77B /* Networking.framework */,
+				A50D79E36A3BA60AAA19156A /* Reducers.framework */,
+				D4D1E377AA2936E33858199A /* RepoListFeature.framework */,
+				A6073CB62D20F1F1E8A291A5 /* Routers.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BD0B186415DFC3ED72DFE19 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2CD003B7DB95764D35E26829 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9796A1629389F86F9CE31DB5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				86851BFEBEB8C303CE03E2AC /* Bundle+GHReposApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A72F792B169EE09290B1A93F /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB03007E128AD093DF07C1 /* Derived */,
+				0081D8A24B7F7468146AAA09 /* Resources */,
+				1BD0B186415DFC3ED72DFE19 /* Sources */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		AA681A20BE7B368DF9933C5C /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				56E8A8EBB56358F2B97C4532 /* GHReposApp.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		C5E8A4C9F3E4FF35C83BC999 = {
+			isa = PBXGroup;
+			children = (
+				A72F792B169EE09290B1A93F /* Project */,
+				071DF47241E082A52B36FEB9 /* Frameworks */,
+				1383433758451024ACC77C20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2AB03007E128AD093DF07C1 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				AA681A20BE7B368DF9933C5C /* InfoPlists */,
+				9796A1629389F86F9CE31DB5 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		136898F1F7FA959417024034 /* GHReposApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48BFC21CE6062E87EAE01DD6 /* Build configuration list for PBXNativeTarget "GHReposApp" */;
+			buildPhases = (
+				21352642D0BC55137C2FEB3E /* Sources */,
+				24E924FE08107D96B4F1C814 /* Resources */,
+				E0756DA585BA2A289F5B8D84 /* Embed Frameworks */,
+				38D9D55C1899B45E5484BC59 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GHReposApp;
+			productName = GHReposApp;
+			productReference = 9BEB1E52E5899F03C4493C5A /* GHReposApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4F5DC187422ADE8D6ABD3A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = com.aaacarrr;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 3BD67DD730EB257D595CC7FB /* Build configuration list for PBXProject "GHReposApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C5E8A4C9F3E4FF35C83BC999;
+			productRefGroup = 1383433758451024ACC77C20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				136898F1F7FA959417024034 /* GHReposApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24E924FE08107D96B4F1C814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25AC12B32FD7E0864BDC418 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21352642D0BC55137C2FEB3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2CBDA7001A8CA71976F2BE /* Bundle+GHReposApp.swift in Sources */,
+				481ACAED2C83A1C510239791 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D3CA9BD3BCBF667AC4886BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2801EC9E6967873DA4EC96E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/GHReposApp.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaacarrr.GHReposApp;
+				PRODUCT_NAME = GHReposApp;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		903778A89E1D4A8379DC0FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F74B4AB02570DEFC86A49EF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/GHReposApp.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaacarrr.GHReposApp;
+				PRODUCT_NAME = GHReposApp;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BD67DD730EB257D595CC7FB /* Build configuration list for PBXProject "GHReposApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				903778A89E1D4A8379DC0FE3 /* Debug */,
+				1D3CA9BD3BCBF667AC4886BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48BFC21CE6062E87EAE01DD6 /* Build configuration list for PBXNativeTarget "GHReposApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74B4AB02570DEFC86A49EF8 /* Debug */,
+				2801EC9E6967873DA4EC96E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4F5DC187422ADE8D6ABD3A7 /* Project object */;
+}

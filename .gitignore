@@ -1,7 +1,5 @@
 xcuserdata/
 *.DS_Store
-*.xcodeproj
-*.xcworkspace
 DerivedData/
 .build/
 Packages/
