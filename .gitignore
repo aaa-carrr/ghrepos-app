@@ -7,3 +7,4 @@ DerivedData/
 Packages/
 Packages.pins
 Package.resolved
+Tuist/Dependencies/SwiftPackageManager
